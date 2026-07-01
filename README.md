@@ -48,3 +48,14 @@ Finally, inside the virtual environment, run
 uvicorn app.main:app
 ```
 The app will run on port 8000 by default.
+
+
+## How to run the unit tests
+First, within the virtual environment, install the required dependencies:
+```
+pip install test-requirements.txt
+```
+To run all tests:
+```
+python -m pytest
+```
