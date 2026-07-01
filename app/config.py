@@ -1,7 +1,11 @@
+from typing import List
+
 from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    cors_origins: List[str]
+
     db_host: str
     db_username: str
     db_database: str
